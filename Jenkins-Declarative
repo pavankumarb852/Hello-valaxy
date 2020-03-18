@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+        stages{
+            stage("Git Checkout"){
+                steps{
+                    git credentialsId: '20b89cdf-6fa8-4a94-9ccd-c579ba1caf46', url: 'https://github.com/pavankumarb852/Hello-valaxy.git'
+                }
+            }
+
+            }
+        }
